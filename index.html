@@ -1,107 +1,75 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQ8QCE1TQ0"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-CQ8QCE1TQ0');
-    </script>
     <meta charset="utf-8">
-    <title>THE_WEB</title>
-  </head>
-  <style>
+    <meta http-equiv="refresh" content="4.2;url=main.html">
+    <title></title>
+    <style>
     body {
       background-color: black;
-      color: white;
     }
-    .logo_align {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .logo {
-      width: 9%;
-    }
-    .logo-bottom-line {
-      position: absolute;
-      left: 2.5%;
-      border-bottom: solid 1.5px white;
-      width : 95%;
-      margin-top: 20px;
-      animation: logo-line;
-      animation-duration: 2s;
-    }
-    .bottom-line {
-      position: absolute;
-      left: 5%;
-      border-bottom: solid 1.5px grey;
-      width : 90%;
-      animation: line;
-      animation-duration: 2s;
-    }
-    .center-list {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .video {
-      width: 640px;
-      height: 360px;
-      animation: fade;
-      animation-duration: 5.5s;
-    }
-    .member-link {
-      color: white;
-      text-decoration: none;
-      animation: fade;
-      animation-duration: 5.5s;
-    }
-    .member-link:hover {
-      color : grey;
-    }
-    p {
-      margin-bottom: 0;
-      margin-top: 7px;
-      font-size: 115%;
-    }
-    @keyframes logo-line {
-        from {border-color: black; width: 1%;}
-        to {border-color: white; width : 95%;}
+      .logo_align {
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        margin: -30px;
       }
-    @keyframes line {
-      from {border-color: black; width: 1%;}
-      to {border-color: grey; width : 90%;}
-    }
-    @keyframes fade {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-    @media(min-width:950px){
-      .video {
-        width: 800px;
-        height: 540px;
+      .logo {
+        width: 60px;
+        animation: fade;
+        animation-duration: 4.3s;
+        opacity: 0;
       }
-      p {
-        font-size: 130%;
+      .bottom-line {
+        position: absolute;
+        left: 50%;
+        bottom: 53%;
+        margin: -30px;
+        border-bottom: 2px solid white;
+        animation: line-fade;
+        width: 60px;
+        animation-duration: 4s;
+        opacity: 0;
       }
-    }
-  </style>
+      .top-line {
+        position: absolute;
+        right: 50%;
+        top: 49.5%;
+        margin: -30px;
+        border-bottom: 2px solid white;
+        animation: line-fade;
+        width: 60px;
+        animation-duration: 4s;
+        opacity: 0;
+      }
+      @keyframes fade {
+        0% {opacity: 0;}
+        50% {opacity: 1;}
+        100% {opacity: 0;}
+      }
+      @keyframes line-fade {
+        0% {
+          width:0%;
+          border-color: black;
+        }
+        50% {
+          width:60px;
+          border-color: white;
+          opacity: 1;
+        }
+        100% {
+          width: 0%;
+          border-color: black;
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
   <body>
+    <div class="top-line"></div>
     <div class="logo_align">
-      <a href="./index.html"><img class="logo" src="assets\dpr.png"></a>
+      <img class="logo" src="assets\dpr.png">
     </div>
-    <div class="logo-bottom-line">
-    </div>
-    <div class="center-list">
-      <iframe class="video" src="https://www.youtube.com/embed/7EXk3BXGkF4?controls=0&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="bottom-line">
-    </div>
-    <div class="center-list">
-      <iframe class="video" src="https://www.youtube.com/embed/PR0SzsA9fbQ?controls=0&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="center-list">
-      <p><strong><a class="member-link" href="Ian.html">IAN</a>  <a class="member-link" href="Live.html">LIVE</a>  <a class="member-link" href="Cream.html">CREAM</a></strong></p>
-    </div>
+    <div class="bottom-line"></div>
   </body>
 </html>

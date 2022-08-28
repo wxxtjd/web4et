@@ -22,6 +22,14 @@
       border-bottom: solid 1.5px white;
       width : 95%;
       margin-top: 20px;
+      animation: logo-line;
+      animation-duration: 2s;
+    }
+    .bottom-line {
+      position: absolute;
+      left: 5%;
+      border-bottom: solid 1.5px grey;
+      width : 90%;
       animation: line;
       animation-duration: 2s;
     }
@@ -49,9 +57,13 @@
       margin-top: 7px;
       font-size: 115%;
     }
+    @keyframes logo-line {
+      from {border-color: black; width: 1%;}
+      to {border-color: white; width : 95%;}
+    }
   @keyframes line {
     from {border-color: black; width: 1%;}
-    to {border-color: white; width : 95%;}
+    to {border-color: white; width : 90%;}
   }
   @keyframes fade {
     from {opacity: 0;}
@@ -75,6 +87,11 @@
     </div>
     <div class="center-list">
       <iframe class="video" src="https://www.youtube.com/embed/7EXk3BXGkF4?controls=0&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="bottom-line">
+    </div>
+    <div class="center-list">
+      <iframe class="video" src="https://www.youtube.com/embed/PR0SzsA9fbQ?controls=0&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="center-list">
       <p><strong><a class="member-link" href="Ian.html">IAN</a>  <a class="member-link" href="Live.html">LIVE</a>  <a class="member-link" href="Cream.html">CREAM</a></strong></p>

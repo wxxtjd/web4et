@@ -8,6 +8,7 @@
       gtag('js', new Date());
       gtag('config', 'G-CQ8QCE1TQ0');
     </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <meta charset="utf-8">
     <title>THE_WEB</title>
   </head>
@@ -30,7 +31,7 @@
       width : 95%;
       margin-top: 20px;
       animation: logo-line;
-      animation-duration: 1.2s;
+      animation-duration: 2s;
     }
     .bottom-line {
       position: absolute;
@@ -38,7 +39,7 @@
       border-bottom: solid 1.5px grey;
       width : 90%;
       animation: line;
-      animation-duration: 1.2s;
+      animation-duration: 2s;
     }
     .center-list {
       text-align: center;
@@ -48,13 +49,11 @@
       width: 640px;
       height: 360px;
       animation: fade;
-      animation-duration: 1.8s;
+      animation-duration: 5.5s;
     }
     .member-link {
       color: white;
       text-decoration: none;
-      animation: fade;
-      animation-duration: 1.8s;
     }
     .member-link:hover {
       color : grey;
@@ -65,11 +64,11 @@
       font-size: 115%;
     }
     @keyframes logo-line {
-        from { width: 1%;}
+        from {border-color: black; width: 1%;}
         to {border-color: white; width : 95%;}
       }
     @keyframes line {
-      from { width: 1%;}
+      from {border-color: black; width: 1%;}
       to {border-color: grey; width : 90%;}
     }
     @keyframes fade {
@@ -93,15 +92,22 @@
     <div class="logo-bottom-line">
     </div>
     <div class="center-list">
-      <iframe class="video" src="https://www.youtube.com/embed/7EXk3BXGkF4?controls=0&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="center-list">
+        <strong class="animated fadeInLeft slower">OUR LAST DREAM</strong>
+      </div>
+      <iframe class="video" src="https://www.youtube.com/embed/0TBdBiW2ozc?controls=0&mute=1&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="bottom-line">
     </div>
     <div class="center-list">
+      <div class="center-list">
+        <strong class="animated fadeInLeft slower">JUST DREAM IT</strong>
+      </div>
       <iframe class="video" src="https://www.youtube.com/embed/PR0SzsA9fbQ?controls=0&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+    <div class="logo-bottom-line"></div>
     <div class="center-list">
-      <p><strong><a class="member-link" href="Ian.html">IAN</a>  <a class="member-link" href="Live.html">LIVE</a>  <a class="member-link" href="Cream.html">CREAM</a></strong></p>
+      <p><strong class="animated fadeInLeft slower"><a class="member-link" href="Ian.html">IAN</a>  <a class="member-link" href="Live.html">LIVE</a>  <a class="member-link" href="Cream.html">CREAM</a></strong></p>
     </div>
   </body>
 </html>
